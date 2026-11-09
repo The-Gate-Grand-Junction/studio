@@ -1,0 +1,13 @@
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  # The first Studio build ran out of memory at Node's default heap size
+  NODE_OPTIONS = "--max-old-space-size=4096"
+
+# Studio is a single-page app
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

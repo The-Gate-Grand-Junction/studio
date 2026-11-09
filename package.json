@@ -1,0 +1,37 @@
+{
+  "name": "the-gate-a-meeting-venue-studio",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.33.2",
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "cors": "node scripts/cors.mjs --domain thegategj.com"
+  },
+  "dependencies": {
+    "@sanity/icons": "^3.8.0",
+    "@sanity/ui": "^3.5.5",
+    "@sanity/vision": "^5.25.1",
+    "react": "^19.2.2",
+    "react-dom": "^19.2.2",
+    "react-icons": "^5.4.0",
+    "sanity": "^5.25.1",
+    "sanity-plugin-icon-picker": "^4.0.0",
+    "styled-components": "^6.1.15"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.0.0",
+    "dotenv": "^16.4.0",
+    "typescript": "~5.7.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "ignoredBuiltDependencies": [
+      "core-js-pure"
+    ]
+  }
+}
