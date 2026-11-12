@@ -48,6 +48,7 @@ export default defineType({
       title: 'Logo',
       description: 'Shown in the header. A wide version reads best; PNG or SVG with a transparent background.',
       type: 'image',
+      options: { hotspot: true },
       group: 'brand',
     }),
     defineField({
@@ -55,6 +56,7 @@ export default defineType({
       title: 'Logo for dark mode',
       description: 'Optional. A light version of the logo, shown when a visitor switches the site to dark mode.',
       type: 'image',
+      options: { hotspot: true },
       group: 'brand',
     }),
 
