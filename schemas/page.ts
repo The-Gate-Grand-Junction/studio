@@ -87,6 +87,7 @@ const heroSection = {
   name: 'heroSection',
   title: 'Hero Section',
   fields: [
+    defineField({ name: 'eyebrow', title: 'Small label above the headline', description: 'Optional. Short gold text, e.g. "Grand Junction, Colorado".', type: 'string' }),
     defineField({ name: 'title', title: 'Headline', type: 'string' }),
     defineField({ name: 'subtitle', title: 'Subtitle', type: 'text' }),
     defineField({ name: 'image', title: 'Background Image', description: 'Optional — gradient is used if empty', type: 'image', options: { hotspot: true } }),
