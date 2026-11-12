@@ -19,7 +19,7 @@ const documents: Array<{ _id: string; _type: string; [field: string]: unknown }>
     "siteName": "The Gate : A Meeting Venue",
     "ctaLabel": "Get Started",
     "ctaUrl": "/contact",
-    "contactEmail": "ljkurtz00@msn.com",
+    "contactEmail": "info@thegategj.com",
     "contactPhone": "",
     "contactAddress": "2825 North Ave, Grand Junction, CO 81501",
     "copyrightText": "© 2026 The Gate : A Meeting Venue. All rights reserved."
@@ -91,7 +91,7 @@ const documents: Array<{ _id: string; _type: string; [field: string]: unknown }>
       {
         "_type": "contactSection",
         "_key": "contactSection-0",
-        "email": "ljkurtz00@msn.com",
+        "email": "info@thegategj.com",
         "address": "2825 North Ave, Grand Junction, CO 81501"
       },
       {
