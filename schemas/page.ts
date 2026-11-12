@@ -210,6 +210,39 @@ const textContent = {
   fields: [
     defineField({ name: 'heading', title: 'Heading', type: 'string' }),
     defineField({ name: 'body', title: 'Body Content', type: 'array', of: richText }),
+    defineField({
+      name: 'style',
+      title: 'Style',
+      description: 'Intro: a larger first paragraph. Highlighted box: for key details people look for, like meeting times.',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Plain', value: 'plain' },
+          { title: 'Intro', value: 'intro' },
+          { title: 'Highlighted box', value: 'highlight' },
+        ],
+        layout: 'radio',
+        direction: 'horizontal',
+      },
+      initialValue: 'plain',
+    }),
+    defineField({
+      name: 'icon',
+      title: 'Icon',
+      description: 'Shown in a highlighted box, next to the heading.',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'None', value: '' },
+          { title: 'Calendar', value: 'calendar' },
+          { title: 'Clock', value: 'clock' },
+          { title: 'People', value: 'users' },
+          { title: 'Heart', value: 'heart' },
+          { title: 'Information', value: 'info' },
+        ],
+      },
+      hidden: ({ parent }) => parent?.style !== 'highlight',
+    }),
   ],
   preview: {
     select: { heading: 'heading' },
