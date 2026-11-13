@@ -37,14 +37,14 @@ export default defineConfig([
   {
     ...sharedConfig,
     name: 'production',
-    title: 'The Gate : A Meeting Venue',
+    title: 'The Gate: A Meeting Venue',
     dataset: 'production',
     basePath: '/production',
   },
   {
     ...sharedConfig,
     name: 'staging',
-    title: 'The Gate : A Meeting Venue (Staging)',
+    title: 'The Gate: A Meeting Venue (Staging)',
     dataset: 'staging',
     basePath: '/staging',
   },
